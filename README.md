@@ -18,3 +18,5 @@ output data : [
   { x: 4.5, y: 0.9, group: 1 },
   { x: 4.9, y: 1.2, group: 1 }
 ]
+
+User can run this file with `node index.js` command or `JavaScript compiler`
