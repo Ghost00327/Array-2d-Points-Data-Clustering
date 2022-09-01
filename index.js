@@ -38,7 +38,7 @@ function makeGroup(points, groupId) {
     startPoint.group = groupId;
     var group = [startPoint];
 
-    for(var j = 0;j < data.length;j++) {
+    for(var j = 1 ;j < data.length;j++) {
       var center = getCenter(group);
       var difference = getDistance(center, data[j]);
       if(difference < distance) {
@@ -48,11 +48,11 @@ function makeGroup(points, groupId) {
     }
 
     groupId++;
-
+    console.log(group)
     makeGroup(points, groupId);
   }
 }
 
 makeGroup(pointsData, 0);
 
-console.log(pointsData)
+// console.log(pointsData)
